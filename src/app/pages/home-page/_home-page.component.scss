@@ -1,0 +1,60 @@
+.home-page {
+    @include flex;
+    padding-block-start: rem(80px);
+    gap:rem(100px);
+   
+
+        
+}
+
+.back-img {
+    background: url(../../../assets/imgs/overview-mob.svg) top no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    bottom: 0;
+    position: fixed;
+}
+
+.home-page .card {
+    // border: solid $clr3 1px;
+    border-radius: rem(3px);
+}
+
+.home-page h1 {
+    padding-block-end: rem(40px);
+}
+
+.home-page h2 {
+    padding-block-end: rem(20px);
+}
+
+h3 {
+@include flex($justify: flex-start);
+}
+
+.home-page .balance {
+    padding-block-end: rem(100px);
+    @include flex($direction:column, $align:flex-start);
+    border: 2px solid darken($whitesmoke, 10%);
+    padding: rem(50px);
+    border-radius: rem(12px);
+    font-size: rem(18px);
+    height: rem(300px);
+
+}
+
+
+.home-page img {
+    width: 1.7rem;
+    height: 1.7rem;
+    align-self: flex-start;
+}
+
+.username {
+    font-size: rem(32px);
+    align-self: flex-start;
+    display: flex;
+    margin-top: rem(20px);
+}
+

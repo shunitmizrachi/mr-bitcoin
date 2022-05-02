@@ -1,0 +1,8 @@
+<section class="contact-list">
+    <ul class="grid-container--fill">  
+        <div class="add-img">
+            <a title="Add contact" [routerLink]="['/edit']"><img src="assets/icons/plus.svg"></a>
+        </div>  
+        <app-contact-preview *ngFor="let contact of contacts" [contact]="contact"></app-contact-preview>
+    </ul>
+</section>

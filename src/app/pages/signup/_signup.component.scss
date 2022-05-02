@@ -1,0 +1,36 @@
+.signup form {
+    margin-top:3rem;
+   @include flex($direction: column);
+    gap:2rem;
+}
+
+.sign-in-img {
+    background: url(../../../assets/imgs/bitcoin-img.svg) top no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+
+}
+
+.sign-in-title {
+    font-size: rem(22px);
+}
+
+.signup {
+    input {
+        height: rem(50px);
+        width: 20%;
+        border-radius: 8px;
+        border: none;
+        background-color: $whitesmoke;
+        border-bottom: 2px solid $purple;
+        transition: box-shadow 0.3s;
+        padding: rem(8px);
+
+        &:focus {
+            outline: none;
+            border: 2px solid $purple;
+          
+        }
+    }
+}

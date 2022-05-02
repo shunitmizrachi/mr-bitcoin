@@ -1,0 +1,30 @@
+.transfer-fund {
+    margin-top: rem(50px);
+    @include flex($direction:column);
+}
+
+.transfer-fund h3 {
+    margin-bottom: rem(20px);
+}
+
+.transfer-fund {
+    padding: rem(20px);
+   
+    input {
+        margin-top: rem(30px);
+        height: rem(50px);
+        width: 250px;
+        border-radius: 8px;
+        border: none;
+        background-color: $whitesmoke;
+        border-bottom: 2px solid $purple;
+        transition: box-shadow 0.3s;
+        padding: rem(8px);
+
+        &:focus {
+            outline: none;
+            border: 2px solid $purple;
+          
+        }
+    }
+    }

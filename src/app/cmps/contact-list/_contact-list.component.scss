@@ -1,0 +1,22 @@
+.contact-list .grid-container--fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 45px;
+  }
+
+ .contact-list {
+   margin-top: rem(100px);
+ } 
+
+ .contact-list .add-img {
+   margin: auto;
+   width: rem(35px);
+   height: rem(35px);
+ }
+
+
+
+
+
+
+

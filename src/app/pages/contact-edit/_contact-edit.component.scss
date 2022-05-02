@@ -1,0 +1,58 @@
+.contact-edit form {
+    @include flex($direction:column);
+    height: rem(350px);
+    gap:rem(15px);
+}
+
+.contact-edit-container {
+    @include flex($direction:column);
+    margin-top: rem(70px);
+}
+
+.contact-edit .actions {
+   @include flex($justify: flex-start);
+    gap:0.8rem;
+    margin-top: rem(20px);
+    width: rem(28px);
+    height: rem(28px);
+    align-self: flex-start;
+}
+
+.contact-edit img {
+    cursor: pointer;
+}
+
+.contact-edit h1 {
+ font-size: rem(32px);
+ padding-block-start: rem(80px);
+   
+}
+
+.contact-edit {
+    label {
+        align-self: flex-start;
+        font-size: rem(20px);
+    }
+    input {
+        width: 400px;
+        height: rem(50px);
+        border-radius: 8px;
+        border: none;
+        background-color: $whitesmoke;
+        border-bottom: 2px solid $purple;
+        transition: box-shadow 0.3s;
+        padding: rem(8px);
+
+        &:focus {
+            outline: none;
+            border: 2px solid $purple;
+          
+        }
+    }
+    }
+
+.contact-edit .title {
+    font-size: rem(32px);
+    margin-bottom: rem(20px);
+}
+

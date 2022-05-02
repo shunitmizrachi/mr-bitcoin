@@ -1,0 +1,9 @@
+<section class="transfer-fund">
+    <form class="transfer-fund" (ngSubmit)="onTransferCoins()">
+        <span>Transfer coins to {{contact.name}}</span>
+        <input [(ngModel)]="amount" max="{{user.coins}}" type="number" name="amount" id="amount" placeholder="How much?">
+        <button>Transfer</button>
+        <div class="mt-2" *ngIf="isBiggerThanMax"> Cannot transfer more than you have!</div>
+        <div class="mt-2" *ngIf="isInvalidAmount"> Invalid amount!</div>
+    </form>
+</section>

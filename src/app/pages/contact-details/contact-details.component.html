@@ -1,0 +1,20 @@
+<section *ngIf="contact && user" class="main-layout">
+    <div class="contact-details">
+        <div class="actions">
+            <img title="Go back" (click)="onBack()" src="assets/icons/back.svg">
+            <img title="Edit contact" [routerLink]="['/edit', contact._id]" src="assets/icons/edit.svg">
+        </div>
+        <img class="user-img" src="assets/icons/user.svg" alt="">
+    <div classs="contact-details-container">
+        <div class="contact-details-contect-container">
+            <span> <span class="mr-2">Name:</span> <span class="purple">{{contact.name}}</span></span>
+            <span><span class="mr-2">Email:</span><span class="purple">{{contact.email}}</span> </span>
+            <span><span class="mr-2">Phone:</span> <span class="purple">{{contact.phone}}</span></span>
+        </div>
+    </div>
+    <section class="transfer">
+        <app-transfer-fund (transfer)="onTransfer($event)" [user]="user" [contact] ="contact" ></app-transfer-fund>
+        <app-move-list [contact] ="contact" [user]="user"></app-move-list>
+    </section>
+</div>
+</section>

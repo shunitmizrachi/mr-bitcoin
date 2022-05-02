@@ -1,0 +1,23 @@
+.contact-preview {
+    @include flex($direction:column);
+    padding: rem(8px) rem(8px);
+    cursor: pointer;
+    &:hover {
+        .contact-name {
+            font-weight: 800;
+        }
+    }
+}
+
+
+.li-img-container img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.contact-name {
+    color: $purple;
+    font-weight: 500;
+}
+
+

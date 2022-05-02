@@ -1,0 +1,25 @@
+<section *ngIf="currMoves" class="move-list">
+    <section *ngIf="contact; else elseBlock">
+        <button *ngIf="!isOnMoves" (click)="toggleIsOnMoves()" class="moves-btn">Your Moves</button>
+        <div *ngIf="isOnMoves" class="moves-card">
+            <ul *ngFor="let move of currMoves">
+                <li>{{move.at |date: 'M/d/yy, h:mm:ss a'}}</li>
+                <li><span class="mr-2">Amount:</span>₿{{move.amount}}</li>
+                <hr>
+            </ul>
+            <div class="close-btn">
+            <a (click)="toggleIsOnMoves()">Close</a>  
+        </div> 
+        </div>
+</section>
+<ng-template #elseBlock>
+    <div class="last-moves">
+        <span class="pink">Your last moves</span>
+        <div class="last-moves-container" *ngFor="let move of currMoves.slice(0,3)">
+            <span class="mt-2"><span class="mr-2">To</span><span class="bold">{{move.to}}</span></span>
+            <span class="mt-2"><span class="mr-2">Amount:</span><span class="purple">₿{{move.amount}}</span></span>
+        </div>
+    </div>
+
+</ng-template>
+</section>

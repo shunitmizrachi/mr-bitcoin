@@ -1,0 +1,6 @@
+<section class="contact-page main-layout">
+        <div class="flex mt-2">
+                <app-contact-filter></app-contact-filter>
+        </div>
+        <app-contact-list [contacts]="contacts$ | async"></app-contact-list>
+</section>

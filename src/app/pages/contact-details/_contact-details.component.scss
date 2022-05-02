@@ -1,0 +1,33 @@
+.contact-details {
+   @include flex($direction: column);
+    margin-top: rem(32px);
+    font-weight: bold;
+}
+
+.contact-details .user-img {
+    @include flex;
+    margin-bottom: rem(30px);
+    height: rem(70px);
+    width: rem(70px);
+}
+
+
+.contact-details-contect-container {
+   @include flex($direction:column, $align:flex-start);
+    gap: 2rem;
+}
+
+
+.contact-details .actions {
+    @include flex($justify: flex-start);
+    gap:0.8rem;
+    width: rem(28px);
+    height: rem(28px);
+    align-self: flex-start;
+    margin-top: 0px;
+}
+
+.contact-details img {
+    cursor: pointer;
+}
+

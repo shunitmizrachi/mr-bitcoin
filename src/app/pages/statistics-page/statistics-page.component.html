@@ -1,0 +1,12 @@
+<section *ngIf="marketPrice && transactions" class="statistics-page main-layout">
+   <div class="chart-container mt-80">
+      <span class="chart-title">{{marketPrice.name}}</span>
+      <app-chart [data]="marketPrice"></app-chart>
+      <span class="chart-title">{{marketPrice.description}}</span>
+   </div>
+   <div class="chart-container mt-80">
+      <span class="chart-title">{{transactions.name}}</span>
+      <app-chart [data]="transactions"></app-chart>
+      <span class="chart-title">{{transactions.description}}</span>
+   </div>
+</section>

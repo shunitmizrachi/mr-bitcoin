@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+//SETUP
+@import 'styles/setup/functions';
+@import 'styles/setup/mixins';
+@import 'styles/setup/typography';
+@import 'styles/setup/variables';
+
+// BASICS
+@import 'styles/basics/base';
+@import 'styles/basics/helpers';
+@import 'styles/basics/layout';
+
+//CMPS
+@import './app/cmps/header/header.component';
+@import './app/cmps/move-list/move-list.component';
+@import './app/cmps/contact-filter/contact-filter.component';
+@import './app/cmps/contact-list/contact-list.component';
+@import './app/cmps/contact-preview/contact-preview.component';
+@import './app/cmps/transfer-fund/transfer-fund.component';
+@import './app/cmps/footer/footer.component';
+@import './app/cmps/app-root/app.component';
+
+//PAGES
+@import './app/pages/home-page/home-page.component';
+@import './app/pages/contact-page/contact-page.component';
+@import './app/pages/contact-edit/contact-edit.component';
+@import './app/pages/signup/signup.component';
+@import './app/pages/contact-details/contact-details.component';
+@import './app/pages/statistics-page/statistics-page.component';
+
+
+

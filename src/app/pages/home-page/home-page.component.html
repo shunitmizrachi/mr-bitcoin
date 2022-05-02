@@ -1,0 +1,16 @@
+<section *ngIf="user" class="main-layout">
+    <span class="username"><span class="mr-2">Hi,</span><span class="purple">{{user.name}}</span></span>
+    <div class="home-page">
+        <div>
+            <div class="balance">
+                <span>Current balance</span>
+                <span class="mt-2"><span class="mr-2">BIT:</span><span class="purple">₿{{user.coins}}</span></span>
+                <span class="mt-2"><span class="mr-2">BTC:</span><span class="purple">${{bitcoinRate | number}}</span></span>
+            </div>
+        </div>
+        <div class="moves">
+            <app-move-list [user]="user"></app-move-list>
+        </div>
+    </div>
+</section>
+<div class="back-img"><img src=""></div>

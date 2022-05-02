@@ -1,0 +1,39 @@
+.last-moves {
+    @include flex($direction:column, $align:flex-start);
+    border: 2px solid darken($whitesmoke, 10%);
+    padding: rem(50px);
+    border-radius: rem(12px);
+    font-size: rem(18px);
+    height: rem(300px);
+}
+
+.last-moves-container {
+    @include flex($direction:column, $align:flex-start);
+}
+.moves-card, .moves-btn {
+    position: fixed;
+    right: 0;
+    top: 20%;
+    // @include title-gradiant;
+}
+
+.moves-card {
+    background-color: $purple;
+    color:$whitesmoke;
+    border-top-left-radius: rem(12px);
+    border-bottom-left-radius: rem(12px);
+}
+
+.moves-card a {
+    font-size: rem(12px);
+}
+
+.moves-card li {
+    @include flex($justify:flex-start);
+    padding:rem(10px);
+}
+
+.close-btn {
+    padding:rem(20px);
+}
+
