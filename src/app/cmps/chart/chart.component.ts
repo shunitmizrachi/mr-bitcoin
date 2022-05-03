@@ -32,7 +32,7 @@ export class ChartComponent implements OnInit {
       });
     });
     this.data.values.forEach(function (value:any) {
-      value[0] = ''
+      value[0] = new Date(value[0] * 1000)
     }); 
   }
 

@@ -20,14 +20,14 @@ public getRate(coins: number){
 }
 
 public getMarketPrice(){
-  return this.http.get<{}>('https://api.blockchain.info/charts/market-price?timespan=5months&format=json&cors=true')
+  return this.http.get<{}>('https://api.blockchain.info/charts/market-price?timespan=12months&format=json&cors=true')
   .pipe(
       map(res => res)
   ) 
 }
 
 public getTransactions(){
-  return this.http.get<{}>('https://api.blockchain.info/charts/n-transactions?timespan=5months&format=json&cors=true')
+  return this.http.get<{}>('https://api.blockchain.info/charts/n-transactions?timespan=12months&format=json&cors=true')
   .pipe(
       map(res => res)
   ) 
